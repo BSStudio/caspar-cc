@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\custom-datagridview\custom-datagridview.csproj">
+      <Project>{47ca7d44-01a8-4ee1-855e-c33cdf03657a}</Project>
+      <Name>custom-datagridview</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
