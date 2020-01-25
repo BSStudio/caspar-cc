@@ -37,7 +37,13 @@
             this.channelsLabelPanel = new System.Windows.Forms.Panel();
             this.channelsLabel = new System.Windows.Forms.Label();
             this.channelsPanel = new System.Windows.Forms.Panel();
+            this.allChannelUpButton = new System.Windows.Forms.Button();
+            this.allChannelDownButton = new System.Windows.Forms.Button();
+            this.previousCaptionButton = new System.Windows.Forms.Button();
+            this.nextCaptionButton = new System.Windows.Forms.Button();
+            this.emptyCaptionButton = new System.Windows.Forms.Button();
             this.actionsLabelPanel.SuspendLayout();
+            this.actionsPanel.SuspendLayout();
             this.captionsLabelPanel.SuspendLayout();
             this.channelsLabelPanel.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +75,11 @@
             // 
             // actionsPanel
             // 
+            this.actionsPanel.Controls.Add(this.emptyCaptionButton);
+            this.actionsPanel.Controls.Add(this.nextCaptionButton);
+            this.actionsPanel.Controls.Add(this.previousCaptionButton);
+            this.actionsPanel.Controls.Add(this.allChannelDownButton);
+            this.actionsPanel.Controls.Add(this.allChannelUpButton);
             this.actionsPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.actionsPanel.Location = new System.Drawing.Point(0, 58);
             this.actionsPanel.Name = "actionsPanel";
@@ -142,6 +153,56 @@
             this.channelsPanel.Size = new System.Drawing.Size(800, 100);
             this.channelsPanel.TabIndex = 5;
             // 
+            // allChannelUpButton
+            // 
+            this.allChannelUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.allChannelUpButton.Location = new System.Drawing.Point(13, 14);
+            this.allChannelUpButton.Name = "allChannelUpButton";
+            this.allChannelUpButton.Size = new System.Drawing.Size(108, 73);
+            this.allChannelUpButton.TabIndex = 0;
+            this.allChannelUpButton.Text = "ALL CHANNEL UP";
+            this.allChannelUpButton.UseVisualStyleBackColor = true;
+            // 
+            // allChannelDownButton
+            // 
+            this.allChannelDownButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.allChannelDownButton.Location = new System.Drawing.Point(127, 14);
+            this.allChannelDownButton.Name = "allChannelDownButton";
+            this.allChannelDownButton.Size = new System.Drawing.Size(108, 73);
+            this.allChannelDownButton.TabIndex = 1;
+            this.allChannelDownButton.Text = "ALL CHANNEL DOWN";
+            this.allChannelDownButton.UseVisualStyleBackColor = true;
+            // 
+            // previousCaptionButton
+            // 
+            this.previousCaptionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.previousCaptionButton.Location = new System.Drawing.Point(275, 14);
+            this.previousCaptionButton.Name = "previousCaptionButton";
+            this.previousCaptionButton.Size = new System.Drawing.Size(120, 73);
+            this.previousCaptionButton.TabIndex = 2;
+            this.previousCaptionButton.Text = "PREVIOUS CAPTION";
+            this.previousCaptionButton.UseVisualStyleBackColor = true;
+            // 
+            // nextCaptionButton
+            // 
+            this.nextCaptionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nextCaptionButton.Location = new System.Drawing.Point(401, 13);
+            this.nextCaptionButton.Name = "nextCaptionButton";
+            this.nextCaptionButton.Size = new System.Drawing.Size(120, 73);
+            this.nextCaptionButton.TabIndex = 3;
+            this.nextCaptionButton.Text = "NEXT CAPTION";
+            this.nextCaptionButton.UseVisualStyleBackColor = true;
+            // 
+            // emptyCaptionButton
+            // 
+            this.emptyCaptionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.emptyCaptionButton.Location = new System.Drawing.Point(527, 14);
+            this.emptyCaptionButton.Name = "emptyCaptionButton";
+            this.emptyCaptionButton.Size = new System.Drawing.Size(120, 73);
+            this.emptyCaptionButton.TabIndex = 4;
+            this.emptyCaptionButton.Text = "EMPTY CAPTION";
+            this.emptyCaptionButton.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -159,6 +220,7 @@
             this.Text = "CasparCG - closed captions GUI";
             this.actionsLabelPanel.ResumeLayout(false);
             this.actionsLabelPanel.PerformLayout();
+            this.actionsPanel.ResumeLayout(false);
             this.captionsLabelPanel.ResumeLayout(false);
             this.captionsLabelPanel.PerformLayout();
             this.channelsLabelPanel.ResumeLayout(false);
@@ -179,6 +241,11 @@
         private System.Windows.Forms.Panel channelsLabelPanel;
         private System.Windows.Forms.Label channelsLabel;
         private System.Windows.Forms.Panel channelsPanel;
+        private System.Windows.Forms.Button emptyCaptionButton;
+        private System.Windows.Forms.Button nextCaptionButton;
+        private System.Windows.Forms.Button previousCaptionButton;
+        private System.Windows.Forms.Button allChannelDownButton;
+        private System.Windows.Forms.Button allChannelUpButton;
     }
 }
 
