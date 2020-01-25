@@ -52,13 +52,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.channelsTable = new System.Windows.Forms.DataGridView();
+            this.channelsButtonsPanel = new System.Windows.Forms.Panel();
+            this.addChannelButton = new System.Windows.Forms.Button();
             this.actionsLabelPanel.SuspendLayout();
             this.actionsPanel.SuspendLayout();
             this.captionsLabelPanel.SuspendLayout();
             this.channelsLabelPanel.SuspendLayout();
+            this.channelsPanel.SuspendLayout();
             this.casparcgLabelPanel.SuspendLayout();
             this.casparcgPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.channelsTable)).BeginInit();
+            this.channelsButtonsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // actionsLabelPanel
@@ -130,7 +136,7 @@
             this.captionsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.captionsPanel.Location = new System.Drawing.Point(0, 216);
             this.captionsPanel.Name = "captionsPanel";
-            this.captionsPanel.Size = new System.Drawing.Size(800, 117);
+            this.captionsPanel.Size = new System.Drawing.Size(800, 404);
             this.captionsPanel.TabIndex = 3;
             // 
             // channelsLabelPanel
@@ -140,7 +146,7 @@
             this.channelsLabelPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.channelsLabelPanel.Controls.Add(this.channelsLabel);
             this.channelsLabelPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.channelsLabelPanel.Location = new System.Drawing.Point(0, 333);
+            this.channelsLabelPanel.Location = new System.Drawing.Point(0, 620);
             this.channelsLabelPanel.Name = "channelsLabelPanel";
             this.channelsLabelPanel.Size = new System.Drawing.Size(800, 58);
             this.channelsLabelPanel.TabIndex = 4;
@@ -160,10 +166,12 @@
             // 
             // channelsPanel
             // 
+            this.channelsPanel.Controls.Add(this.channelsTable);
+            this.channelsPanel.Controls.Add(this.channelsButtonsPanel);
             this.channelsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.channelsPanel.Location = new System.Drawing.Point(0, 391);
+            this.channelsPanel.Location = new System.Drawing.Point(0, 678);
             this.channelsPanel.Name = "channelsPanel";
-            this.channelsPanel.Size = new System.Drawing.Size(800, 100);
+            this.channelsPanel.Size = new System.Drawing.Size(800, 200);
             this.channelsPanel.TabIndex = 5;
             // 
             // allChannelUpButton
@@ -223,7 +231,7 @@
             this.casparcgLabelPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.casparcgLabelPanel.Controls.Add(this.casparcgLabel);
             this.casparcgLabelPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.casparcgLabelPanel.Location = new System.Drawing.Point(0, 491);
+            this.casparcgLabelPanel.Location = new System.Drawing.Point(0, 878);
             this.casparcgLabelPanel.Name = "casparcgLabelPanel";
             this.casparcgLabelPanel.Size = new System.Drawing.Size(800, 58);
             this.casparcgLabelPanel.TabIndex = 5;
@@ -253,7 +261,7 @@
             this.casparcgPanel.Controls.Add(this.textBox1);
             this.casparcgPanel.Controls.Add(this.label1);
             this.casparcgPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.casparcgPanel.Location = new System.Drawing.Point(0, 549);
+            this.casparcgPanel.Location = new System.Drawing.Point(0, 936);
             this.casparcgPanel.Name = "casparcgPanel";
             this.casparcgPanel.Padding = new System.Windows.Forms.Padding(15, 20, 15, 20);
             this.casparcgPanel.Size = new System.Drawing.Size(800, 117);
@@ -330,13 +338,46 @@
             this.button2.Text = "DISCONNECT";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // channelsTable
+            // 
+            this.channelsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.channelsTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.channelsTable.Location = new System.Drawing.Point(0, 0);
+            this.channelsTable.Name = "channelsTable";
+            this.channelsTable.RowHeadersWidth = 51;
+            this.channelsTable.RowTemplate.Height = 24;
+            this.channelsTable.Size = new System.Drawing.Size(800, 140);
+            this.channelsTable.TabIndex = 0;
+            // 
+            // channelsButtonsPanel
+            // 
+            this.channelsButtonsPanel.AutoSize = true;
+            this.channelsButtonsPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.channelsButtonsPanel.Controls.Add(this.addChannelButton);
+            this.channelsButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.channelsButtonsPanel.Location = new System.Drawing.Point(0, 140);
+            this.channelsButtonsPanel.Name = "channelsButtonsPanel";
+            this.channelsButtonsPanel.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.channelsButtonsPanel.Size = new System.Drawing.Size(800, 60);
+            this.channelsButtonsPanel.TabIndex = 1;
+            // 
+            // addChannelButton
+            // 
+            this.addChannelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.addChannelButton.Location = new System.Drawing.Point(656, 13);
+            this.addChannelButton.Name = "addChannelButton";
+            this.addChannelButton.Size = new System.Drawing.Size(132, 34);
+            this.addChannelButton.TabIndex = 0;
+            this.addChannelButton.Text = "ADD CHANNEL";
+            this.addChannelButton.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(800, 666);
+            this.ClientSize = new System.Drawing.Size(800, 1053);
             this.Controls.Add(this.captionsPanel);
             this.Controls.Add(this.channelsLabelPanel);
             this.Controls.Add(this.channelsPanel);
@@ -354,11 +395,15 @@
             this.captionsLabelPanel.PerformLayout();
             this.channelsLabelPanel.ResumeLayout(false);
             this.channelsLabelPanel.PerformLayout();
+            this.channelsPanel.ResumeLayout(false);
+            this.channelsPanel.PerformLayout();
             this.casparcgLabelPanel.ResumeLayout(false);
             this.casparcgLabelPanel.PerformLayout();
             this.casparcgPanel.ResumeLayout(false);
             this.casparcgPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.channelsTable)).EndInit();
+            this.channelsButtonsPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,6 +435,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView channelsTable;
+        private System.Windows.Forms.Panel channelsButtonsPanel;
+        private System.Windows.Forms.Button addChannelButton;
     }
 }
 
