@@ -42,10 +42,14 @@
             this.previousCaptionButton = new System.Windows.Forms.Button();
             this.nextCaptionButton = new System.Windows.Forms.Button();
             this.emptyCaptionButton = new System.Windows.Forms.Button();
+            this.casparcgLabelPanel = new System.Windows.Forms.Panel();
+            this.casparcgLabel = new System.Windows.Forms.Label();
+            this.casparcgPanel = new System.Windows.Forms.Panel();
             this.actionsLabelPanel.SuspendLayout();
             this.actionsPanel.SuspendLayout();
             this.captionsLabelPanel.SuspendLayout();
             this.channelsLabelPanel.SuspendLayout();
+            this.casparcgLabelPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // actionsLabelPanel
@@ -117,7 +121,7 @@
             this.captionsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.captionsPanel.Location = new System.Drawing.Point(0, 216);
             this.captionsPanel.Name = "captionsPanel";
-            this.captionsPanel.Size = new System.Drawing.Size(800, 150);
+            this.captionsPanel.Size = new System.Drawing.Size(800, 134);
             this.captionsPanel.TabIndex = 3;
             // 
             // channelsLabelPanel
@@ -127,7 +131,7 @@
             this.channelsLabelPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.channelsLabelPanel.Controls.Add(this.channelsLabel);
             this.channelsLabelPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.channelsLabelPanel.Location = new System.Drawing.Point(0, 366);
+            this.channelsLabelPanel.Location = new System.Drawing.Point(0, 350);
             this.channelsLabelPanel.Name = "channelsLabelPanel";
             this.channelsLabelPanel.Size = new System.Drawing.Size(800, 58);
             this.channelsLabelPanel.TabIndex = 4;
@@ -148,7 +152,7 @@
             // channelsPanel
             // 
             this.channelsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.channelsPanel.Location = new System.Drawing.Point(0, 424);
+            this.channelsPanel.Location = new System.Drawing.Point(0, 408);
             this.channelsPanel.Name = "channelsPanel";
             this.channelsPanel.Size = new System.Drawing.Size(800, 100);
             this.channelsPanel.TabIndex = 5;
@@ -203,16 +207,51 @@
             this.emptyCaptionButton.Text = "EMPTY CAPTION";
             this.emptyCaptionButton.UseVisualStyleBackColor = true;
             // 
+            // casparcgLabelPanel
+            // 
+            this.casparcgLabelPanel.AutoSize = true;
+            this.casparcgLabelPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.casparcgLabelPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.casparcgLabelPanel.Controls.Add(this.casparcgLabel);
+            this.casparcgLabelPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.casparcgLabelPanel.Location = new System.Drawing.Point(0, 508);
+            this.casparcgLabelPanel.Name = "casparcgLabelPanel";
+            this.casparcgLabelPanel.Size = new System.Drawing.Size(800, 58);
+            this.casparcgLabelPanel.TabIndex = 5;
+            // 
+            // casparcgLabel
+            // 
+            this.casparcgLabel.AutoSize = true;
+            this.casparcgLabel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.casparcgLabel.Font = new System.Drawing.Font("Broadway", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.casparcgLabel.ForeColor = System.Drawing.Color.White;
+            this.casparcgLabel.Location = new System.Drawing.Point(0, 0);
+            this.casparcgLabel.Name = "casparcgLabel";
+            this.casparcgLabel.Padding = new System.Windows.Forms.Padding(10);
+            this.casparcgLabel.Size = new System.Drawing.Size(255, 58);
+            this.casparcgLabel.TabIndex = 0;
+            this.casparcgLabel.Text = "CASPAR CG";
+            // 
+            // casparcgPanel
+            // 
+            this.casparcgPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.casparcgPanel.Location = new System.Drawing.Point(0, 566);
+            this.casparcgPanel.Name = "casparcgPanel";
+            this.casparcgPanel.Size = new System.Drawing.Size(800, 100);
+            this.casparcgPanel.TabIndex = 6;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(800, 524);
+            this.ClientSize = new System.Drawing.Size(800, 666);
             this.Controls.Add(this.captionsPanel);
             this.Controls.Add(this.channelsLabelPanel);
             this.Controls.Add(this.channelsPanel);
+            this.Controls.Add(this.casparcgLabelPanel);
+            this.Controls.Add(this.casparcgPanel);
             this.Controls.Add(this.captionsLabelPanel);
             this.Controls.Add(this.actionsPanel);
             this.Controls.Add(this.actionsLabelPanel);
@@ -225,6 +264,8 @@
             this.captionsLabelPanel.PerformLayout();
             this.channelsLabelPanel.ResumeLayout(false);
             this.channelsLabelPanel.PerformLayout();
+            this.casparcgLabelPanel.ResumeLayout(false);
+            this.casparcgLabelPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,6 +287,9 @@
         private System.Windows.Forms.Button previousCaptionButton;
         private System.Windows.Forms.Button allChannelDownButton;
         private System.Windows.Forms.Button allChannelUpButton;
+        private System.Windows.Forms.Panel casparcgLabelPanel;
+        private System.Windows.Forms.Label casparcgLabel;
+        private System.Windows.Forms.Panel casparcgPanel;
     }
 }
 
