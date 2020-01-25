@@ -45,11 +45,20 @@
             this.casparcgLabelPanel = new System.Windows.Forms.Panel();
             this.casparcgLabel = new System.Windows.Forms.Label();
             this.casparcgPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.actionsLabelPanel.SuspendLayout();
             this.actionsPanel.SuspendLayout();
             this.captionsLabelPanel.SuspendLayout();
             this.channelsLabelPanel.SuspendLayout();
             this.casparcgLabelPanel.SuspendLayout();
+            this.casparcgPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // actionsLabelPanel
@@ -121,7 +130,7 @@
             this.captionsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.captionsPanel.Location = new System.Drawing.Point(0, 216);
             this.captionsPanel.Name = "captionsPanel";
-            this.captionsPanel.Size = new System.Drawing.Size(800, 134);
+            this.captionsPanel.Size = new System.Drawing.Size(800, 117);
             this.captionsPanel.TabIndex = 3;
             // 
             // channelsLabelPanel
@@ -131,7 +140,7 @@
             this.channelsLabelPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.channelsLabelPanel.Controls.Add(this.channelsLabel);
             this.channelsLabelPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.channelsLabelPanel.Location = new System.Drawing.Point(0, 350);
+            this.channelsLabelPanel.Location = new System.Drawing.Point(0, 333);
             this.channelsLabelPanel.Name = "channelsLabelPanel";
             this.channelsLabelPanel.Size = new System.Drawing.Size(800, 58);
             this.channelsLabelPanel.TabIndex = 4;
@@ -152,7 +161,7 @@
             // channelsPanel
             // 
             this.channelsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.channelsPanel.Location = new System.Drawing.Point(0, 408);
+            this.channelsPanel.Location = new System.Drawing.Point(0, 391);
             this.channelsPanel.Name = "channelsPanel";
             this.channelsPanel.Size = new System.Drawing.Size(800, 100);
             this.channelsPanel.TabIndex = 5;
@@ -214,7 +223,7 @@
             this.casparcgLabelPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.casparcgLabelPanel.Controls.Add(this.casparcgLabel);
             this.casparcgLabelPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.casparcgLabelPanel.Location = new System.Drawing.Point(0, 508);
+            this.casparcgLabelPanel.Location = new System.Drawing.Point(0, 491);
             this.casparcgLabelPanel.Name = "casparcgLabelPanel";
             this.casparcgLabelPanel.Size = new System.Drawing.Size(800, 58);
             this.casparcgLabelPanel.TabIndex = 5;
@@ -234,11 +243,92 @@
             // 
             // casparcgPanel
             // 
+            this.casparcgPanel.AutoSize = true;
+            this.casparcgPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.casparcgPanel.Controls.Add(this.button2);
+            this.casparcgPanel.Controls.Add(this.button1);
+            this.casparcgPanel.Controls.Add(this.label3);
+            this.casparcgPanel.Controls.Add(this.numericUpDown1);
+            this.casparcgPanel.Controls.Add(this.label2);
+            this.casparcgPanel.Controls.Add(this.textBox1);
+            this.casparcgPanel.Controls.Add(this.label1);
             this.casparcgPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.casparcgPanel.Location = new System.Drawing.Point(0, 566);
+            this.casparcgPanel.Location = new System.Drawing.Point(0, 549);
             this.casparcgPanel.Name = "casparcgPanel";
-            this.casparcgPanel.Size = new System.Drawing.Size(800, 100);
+            this.casparcgPanel.Padding = new System.Windows.Forms.Padding(15, 20, 15, 20);
+            this.casparcgPanel.Size = new System.Drawing.Size(800, 117);
             this.casparcgPanel.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(18, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Host:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(69, 20);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(203, 22);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(18, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Port:";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(69, 49);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(203, 22);
+            this.numericUpDown1.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(489, 20);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(5);
+            this.label3.Size = new System.Drawing.Size(293, 33);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "NOT CONNECTED";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(488, 60);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(144, 34);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "CONNECT";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Enabled = false;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Location = new System.Drawing.Point(638, 60);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(144, 34);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "DISCONNECT";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -266,6 +356,9 @@
             this.channelsLabelPanel.PerformLayout();
             this.casparcgLabelPanel.ResumeLayout(false);
             this.casparcgLabelPanel.PerformLayout();
+            this.casparcgPanel.ResumeLayout(false);
+            this.casparcgPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,6 +383,13 @@
         private System.Windows.Forms.Panel casparcgLabelPanel;
         private System.Windows.Forms.Label casparcgLabel;
         private System.Windows.Forms.Panel casparcgPanel;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
