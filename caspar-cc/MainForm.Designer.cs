@@ -55,9 +55,11 @@
             this.channelsTable = new System.Windows.Forms.DataGridView();
             this.channelsButtonsPanel = new System.Windows.Forms.Panel();
             this.addChannelButton = new System.Windows.Forms.Button();
+            this.captionsTable = new System.Windows.Forms.DataGridView();
             this.actionsLabelPanel.SuspendLayout();
             this.actionsPanel.SuspendLayout();
             this.captionsLabelPanel.SuspendLayout();
+            this.captionsPanel.SuspendLayout();
             this.channelsLabelPanel.SuspendLayout();
             this.channelsPanel.SuspendLayout();
             this.casparcgLabelPanel.SuspendLayout();
@@ -65,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.casparcgPortInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.channelsTable)).BeginInit();
             this.channelsButtonsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.captionsTable)).BeginInit();
             this.SuspendLayout();
             // 
             // actionsLabelPanel
@@ -133,6 +136,7 @@
             // 
             // captionsPanel
             // 
+            this.captionsPanel.Controls.Add(this.captionsTable);
             this.captionsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.captionsPanel.Location = new System.Drawing.Point(0, 216);
             this.captionsPanel.Name = "captionsPanel";
@@ -371,6 +375,17 @@
             this.addChannelButton.Text = "ADD CHANNEL";
             this.addChannelButton.UseVisualStyleBackColor = true;
             // 
+            // captionsTable
+            // 
+            this.captionsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.captionsTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.captionsTable.Location = new System.Drawing.Point(0, 0);
+            this.captionsTable.Name = "captionsTable";
+            this.captionsTable.RowHeadersWidth = 51;
+            this.captionsTable.RowTemplate.Height = 24;
+            this.captionsTable.Size = new System.Drawing.Size(800, 404);
+            this.captionsTable.TabIndex = 1;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -393,6 +408,7 @@
             this.actionsPanel.ResumeLayout(false);
             this.captionsLabelPanel.ResumeLayout(false);
             this.captionsLabelPanel.PerformLayout();
+            this.captionsPanel.ResumeLayout(false);
             this.channelsLabelPanel.ResumeLayout(false);
             this.channelsLabelPanel.PerformLayout();
             this.channelsPanel.ResumeLayout(false);
@@ -404,6 +420,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.casparcgPortInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.channelsTable)).EndInit();
             this.channelsButtonsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.captionsTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -438,6 +455,7 @@
         private System.Windows.Forms.DataGridView channelsTable;
         private System.Windows.Forms.Panel channelsButtonsPanel;
         private System.Windows.Forms.Button addChannelButton;
+        private System.Windows.Forms.DataGridView captionsTable;
     }
 }
 
